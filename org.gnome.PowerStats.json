@@ -65,8 +65,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnome.org/pub/GNOME/sources/gnome-power-manager/3.30/gnome-power-manager-3.30.0.tar.xz",
-          "sha256": "f53d9e3f1ceb86feba655cd085856293cab3a57b42d5f46b7499a723a2e92554"
+          "url": "https://ftp.gnome.org/pub/GNOME/sources/gnome-power-manager/3.32/gnome-power-manager-3.32.0.tar.xz",
+          "sha256": "4f2ca1a756da5061b04042b5cf21008df1267806d76c8e0fb08422c6f8b02e37"
         }
       ]
     }
