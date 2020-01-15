@@ -2,16 +2,12 @@
   "app-id": "org.gnome.PowerStats",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.34",
   "command": "gnome-power-statistics",
   "finish-args": [
     "--share=ipc",
     "--socket=wayland",
-    "--socket=x11",
-    "--filesystem=xdg-run/dconf",
-    "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--socket=fallback-x11",
     "--system-talk-name=org.freedesktop.UPower"
   ],
   "cleanup": [
@@ -20,7 +16,8 @@
     "/share/man"
   ],
   "modules": [
-    "shared-modules/udev/udev-175.json",
+    "shared-modules/gudev/gudev.json",
+    "shared-modules/intltool/intltool-0.51.json",
     {
       "name": "libusb",
       "config-opts": [
@@ -39,6 +36,10 @@
     },
     {
       "name": "upower",
+      "config-opts": [
+        "--with-systemdsystemunitdir=no",
+        "--with-systemdutildir=no"
+      ],
       "cleanup": [
         "/bin/upower",
         "/etc/dbus-1",
@@ -54,8 +55,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.freedesktop.org/upower/upower/uploads/c438511024b9bc5a904f8775cfc8e4c4/upower-0.99.10.tar.xz",
-          "sha256": "642251b97080ede8be6dbfeaf8f30ff6eadd6eb27aa137bc50f5b9b2295ba29d"
+          "url": "https://gitlab.freedesktop.org/upower/upower/uploads/93cfe7c8d66ed486001c4f3f55399b7a/upower-0.99.11.tar.xz",
+          "sha256": "64b5ffbfccd5bdb15d925777979a4dbee1a957f9eaeb158dc76175267eddbdef"
         }
       ]
     },
@@ -65,8 +66,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnome.org/pub/GNOME/sources/gnome-power-manager/3.32/gnome-power-manager-3.32.0.tar.xz",
+          "url": "https://download.gnome.org/sources/gnome-power-manager/3.32/gnome-power-manager-3.32.0.tar.xz",
           "sha256": "4f2ca1a756da5061b04042b5cf21008df1267806d76c8e0fb08422c6f8b02e37"
+        },
+        {
+          "type": "patch",
+          "path": "appdata_oars.patch"
         }
       ]
     }

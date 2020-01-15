@@ -1,0 +1,10 @@
+--- a/data/appdata/org.gnome.PowerStats.appdata.xml.in	2019-03-08 13:01:44.000000000 +0100
++++ b/data/appdata/org.gnome.PowerStats.appdata.xml.in	2020-01-15 17:07:53.015151854 +0100
+@@ -25,6 +25,7 @@
+       <image>https://git.gnome.org/browse/gnome-power-manager/plain/data/appdata/gpm-stats-wakeups.png</image>
+     </screenshot>
+   </screenshots>
++  <content_rating type="oars-1.0" />
+   <!--
+    Validate with `appstream-util validate *.appdata.xml`
+   -->
