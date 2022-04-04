@@ -2,7 +2,7 @@
   "app-id": "org.gnome.PowerStats",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "40",
+  "runtime-version": "42",
   "command": "gnome-power-statistics",
   "finish-args": [
     "--share=ipc",
