@@ -50,12 +50,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-power-manager/3.32/gnome-power-manager-3.32.0.tar.xz",
-          "sha256": "4f2ca1a756da5061b04042b5cf21008df1267806d76c8e0fb08422c6f8b02e37"
+          "url": "https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz",
+          "sha256": "7daab48bbddb30e9df2aba650cb60d05e667c9f885ace6a0a1e7950e0cbdd32f"
         },
         {
           "type": "patch",
-          "path": "appdata_oars.patch"
+          "path": "0001-trivial-Fix-up-appdata-release-date.patch"
         }
       ]
     }
