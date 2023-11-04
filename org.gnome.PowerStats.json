@@ -38,6 +38,11 @@
       ],
       "sources": [
         {
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 5056,
+            "url-template": "https://gitlab.freedesktop.org/upower/upower/-/archive/v$version/upower-v$version.tar.gz"
+          },
           "type": "archive",
           "url": "https://gitlab.freedesktop.org/upower/upower/uploads/93cfe7c8d66ed486001c4f3f55399b7a/upower-0.99.11.tar.xz",
           "sha256": "64b5ffbfccd5bdb15d925777979a4dbee1a957f9eaeb158dc76175267eddbdef"
