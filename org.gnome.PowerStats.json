@@ -20,9 +20,14 @@
         "shared-modules/libusb/libusb.json",
         {
             "name": "upower",
+            "buildsystem": "meson",
             "config-opts": [
-                "--with-systemdsystemunitdir=no",
-                "--with-systemdutildir=no"
+                "-Dsystemdsystemunitdir=no",
+                "-Dudevrulesdir=/app/lib/udev/rules.d",
+                "-Dudevhwdbdir=/app/lib/udev/hwdb.d",
+                "-Dman=false",
+                "-Dgtk-doc=false",
+                "-Dintrospection=disabled"
             ],
             "cleanup": [
                 "/bin/upower",
@@ -32,6 +37,7 @@
                 "/libexec/rules.d",
                 "/lib/girepository-1.0",
                 "/lib/pkgconfig",
+                "/lib/udev",
                 "/share/dbus-1",
                 "/share/gir-1.0",
                 "/var"
@@ -44,8 +50,8 @@
                         "url-template": "https://gitlab.freedesktop.org/upower/upower/-/archive/v$version/upower-v$version.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/upower/upower/uploads/93cfe7c8d66ed486001c4f3f55399b7a/upower-0.99.11.tar.xz",
-                    "sha256": "64b5ffbfccd5bdb15d925777979a4dbee1a957f9eaeb158dc76175267eddbdef"
+                    "url": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.2/upower-v1.90.2.tar.gz",
+                    "sha256": "5c4e736648f0c89d2368fbbe1e6fc0598a1565c4b435bade1d65e890259fb759"
                 }
             ]
         },
