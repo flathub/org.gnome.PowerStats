@@ -2,7 +2,7 @@
     "app-id": "org.gnome.PowerStats",
     "sdk": "org.gnome.Sdk",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "command": "gnome-power-statistics",
     "finish-args": [
         "--share=ipc",
@@ -71,7 +71,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "0001-trivial-Fix-up-appdata-release-date.patch"
+                    "path": "fix_appdata.patch"
                 }
             ]
         }
