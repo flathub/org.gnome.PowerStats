@@ -50,8 +50,8 @@
                         "url-template": "https://gitlab.freedesktop.org/upower/upower/-/archive/v$version/upower-v$version.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.gz",
-                    "sha256": "7d616e529ddfd4a4ced9dcf701c1d77628ef12e242d0603f32bedfa1a2c7e3ed"
+                    "url": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.8/upower-v1.90.8.tar.gz",
+                    "sha256": "015f172a918f05a1d2b3d056d1e650cec72a209a5479f1c10b35bd68ce22dcb7"
                 }
             ]
         },
