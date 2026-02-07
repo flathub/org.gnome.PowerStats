@@ -2,7 +2,7 @@
     "app-id": "org.gnome.PowerStats",
     "sdk": "org.gnome.Sdk",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "command": "gnome-power-statistics",
     "finish-args": [
         "--share=ipc",
@@ -16,8 +16,6 @@
         "/share/man"
     ],
     "modules": [
-        "shared-modules/gudev/gudev.json",
-        "shared-modules/libusb/libusb.json",
         {
             "name": "upower",
             "buildsystem": "meson",
