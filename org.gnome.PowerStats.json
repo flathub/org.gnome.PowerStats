@@ -64,8 +64,8 @@
                         "stable-only": true
                     },
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz",
-                    "sha256": "7daab48bbddb30e9df2aba650cb60d05e667c9f885ace6a0a1e7950e0cbdd32f"
+                    "url": "https://download.gnome.org/sources/gnome-power-manager/50/gnome-power-manager-50.0.tar.xz",
+                    "sha256": "bf243d6389f8bfa71c958534ed2669b29965c47f55c3cbe4983b296d0f99e5d7"
                 },
                 {
                     "type": "patch",
