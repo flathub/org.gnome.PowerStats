@@ -48,8 +48,8 @@
                         "url-template": "https://gitlab.freedesktop.org/upower/upower/-/archive/v$version/upower-v$version.tar.gz"
                     },
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.gz",
-                    "sha256": "cd87801c8489778b76bbdcd4e03ae60b44ef5bcc2fed40332630fbadb4343517"
+                    "url": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.2/upower-v1.91.2.tar.gz",
+                    "sha256": "cd9a3a3f5e0aa21eac131253228757bbdc90ecd39768f46c325754e32daa3083"
                 }
             ]
         },
@@ -64,8 +64,8 @@
                         "stable-only": true
                     },
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz",
-                    "sha256": "7daab48bbddb30e9df2aba650cb60d05e667c9f885ace6a0a1e7950e0cbdd32f"
+                    "url": "https://download.gnome.org/sources/gnome-power-manager/50/gnome-power-manager-50.0.tar.xz",
+                    "sha256": "bf243d6389f8bfa71c958534ed2669b29965c47f55c3cbe4983b296d0f99e5d7"
                 },
                 {
                     "type": "patch",
